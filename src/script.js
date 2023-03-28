@@ -3,8 +3,15 @@ const jokeText = document.querySelector(".joketext");
 getJokeBtn.addEventListener("mousedown", () =>
   getJokeBtn.classList.add("border")
 );
+getJokeBtn.addEventListener("touchstart", () =>
+  getJokeBtn.classList.add("border")
+);
+
 getJokeBtn.addEventListener("mouseup", () =>
   getJokeBtn.classList.remove("border")
+);
+getJokeBtn.addEventListener("mouseup", () =>
+  getJokeBtn.classList.remove("touchdown")
 );
 getJokeBtn.addEventListener("click", handleClick);
 
